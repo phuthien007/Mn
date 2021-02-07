@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<main>
+    <div class="container">
+        <h2>Update student into {{class}}</h2>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{sf.as_p}}
+            <input type="submit" name="submit" id="submit">
+        </form>
+    </div>
+    
+</main>
+
+{% endblock %}
